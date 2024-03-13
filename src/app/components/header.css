@@ -1,0 +1,54 @@
+header{
+    background: #0053a2;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    height: var(--header-h);
+}
+.header-container {
+    align-items: center;
+    display: flex;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-left: 50px;
+}
+.sbd-label {
+    margin-left: 15px;
+    position: relative;
+    width: max-content;
+}
+.sbd-lao {
+    font-size: 20pt;
+    letter-spacing: 0.15rem;
+}
+.sbd-eng{
+    margin-top: 10px;
+    font-size: 12pt;
+    letter-spacing: 0.07rem;
+}
+.sbd-lao::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    bottom: 25px;
+    left: 0;
+    border-radius: 4px;
+    animation-name: label-underline;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+@keyframes label-underline {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+@media screen and (max-width: 1440px) {
+    .header-container{
+        max-width: 1296px; /* 90% of 1440px */
+        margin: 0 auto;
+    }
+}

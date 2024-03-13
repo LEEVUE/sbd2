@@ -1,0 +1,36 @@
+footer {
+    background-color: #314448;
+    color: wheat;
+    text-align: center;
+    height: var(--footer-height);
+}
+.footer-detail {
+    padding: 8px 0;
+}
+.social-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+.social-container a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+    color: wheat;
+}
+.social-container span {
+    padding: 0 10px;
+}
+.facebook:hover{
+    color: #0866ff;
+}
+.youtube:hover {
+    color: #ff0000;
+}
+.whatsapp:hover {
+    color: #25D366;
+}
+.email:hover {
+    color: #38d6fe;
+}

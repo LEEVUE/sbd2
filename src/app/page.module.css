@@ -34,9 +34,8 @@
   border-radius: var(--border-radius);
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+.eng {
+  font-family: var(--font-eng);
 }
 
 .grid {
