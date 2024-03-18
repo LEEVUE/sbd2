@@ -1,25 +1,132 @@
 nav {
-    background-color: blue;
+    background-color: navy;
 }
 menu {
     max-width: 1440px;
     margin: 0 auto;
-    min-height: calc(100vh - var(--header-height) - var(--footer-height) - 45px);
     display: flex;
     justify-content: space-between;
+    line-height: 40px;
+    color: white;
 }
-menu li {
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.menu-container li {
+    position: relative;
     list-style: none;
-    padding: 0 10px;
+    background-color: navy;
+    color: white;
 }
 menu a {
-    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14pt;
     color: white;
-    line-height: 45px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    padding: 0 12px;
 }
-menu > ul {
+.menu-container li a:focus, menu li a:active {
+    outline-style: outset;
+    outline-width: 2px;
+    outline-color: #38d6fe;
+    outline-offset: -5px;
+    width: 100%;
+}
+.menu-container a:hover {
+    background-color: wheat;
+    color: black;
+    width: 100%;
+}
+.sub-menu {
+    position: absolute;
+    display: block;
+    min-width: max-content;
+    top: 120%;
+    opacity: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: 0.3s;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+    line-height: 35px;
+}
+.sub-menu li a { /*ກຳນົດຂອບເຂດເພີ່ມເພື່ອໃຫ້ໄດ້ເນື້ອທີ່ສຳລັບລູກສອນ ArrowRigth*/
+    display: inline-block;
+    background-color: #004963 !important;
+    padding-right: 20px;
+    width: 100%;
+    font-size: 13pt;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+.sub-menu a:hover { /*ກຳນົດສະໄຕລ໌ສະເພາະໃຫ້ກັບບັນດາ sub-menu ຍ່ອຍ*/
+    color: #38d6fe;
+}
+li:hover > ul{
+    top: 105%;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* =============== ກຳນົດເມນູຍ່ອຍໆທີ່້ນ້ອຍກວ່າ sub-menu =============== */
+.sub-menu li > ul {
+    position: absolute;
+    left: 105%;
+    top: 0;
+    margin-left: 2px;
+    min-width: max-content;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+/* ========== ກຳນົດໃຫ້ລູກສອນໝູນຕິດລົບ 180 ອົງສາ(ໝູນທວນເຂັມໂມງ) ==========*/
+.menu-container li .arrowDown {
+    transition: all 0.3s ease-in-out;
+}
+menu li:hover .arrowDown {
+    transform: rotate(-180deg);
+}
+
+/* ==================== ກຳນົດການຈັດທີ່ຕັ້ງໃຫ້ກັບ icons ==================== */
+.sub-menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    left: 100%;
+}
+.arrowDown {
+    vertical-align: text-bottom;
+    margin-left: 5px;
+    margin-right: -5px;
+}
+.arrowRigth {
+    position: absolute;
+    right: 0;
+    top: 9px
+}
+
+/*==================== ກຳນົດປຸ່ມຄົ້ນຫາ ====================*/
+.search-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
+.searchIcon {
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+.search-container a {
+    padding: 0px 5px;
+}
+
+/* ==================== ກຳນົດຂະໜາດໜ້າຈໍ ==================== */
 @media screen and (max-width: 1440px) {
     menu{
         max-width: 1296px; /* 90% of 1440px */
