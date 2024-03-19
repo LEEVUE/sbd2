@@ -19,9 +19,9 @@ export default function RootLayout({ children }) {
         <body>
             <Header/>
             <Navbar/>
-            <main>{children}</main>
+            <main className="body-wrap">{children}</main>
             <Footer/>
         </body>
     </html>
-     );
+    );
 }

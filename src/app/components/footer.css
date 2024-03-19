@@ -1,11 +1,13 @@
 footer {
-    background-color: #314448;
-    color: wheat;
+    background-color: navy;
     text-align: center;
     height: var(--footer-height);
 }
 .footer-detail {
-    padding: 8px 0;
+    padding: 10px 0;
+    /* font-size: 14pt; */
+    font-weight: bold;
+    color: white;
 }
 .social-container {
     display: flex;
@@ -15,15 +17,27 @@ footer {
 .social-container a {
     display: flex;
     align-items: center;
-    margin-left: 10px;
     text-decoration: none;
-    color: wheat;
+    color: whitesmoke;
 }
 .social-container span {
-    padding: 0 10px;
+    padding: 0 15px 0 5px;
+}
+.social-outline {
+    font-size: 30px;
+}
+.social-container a:hover {
+    border-style: dashed;
+    border-width: 1px;
+    font-weight: bold;
+    margin: -1px;
 }
 .facebook:hover{
     color: #0866ff;
+}
+a:hover .fb {
+    border-radius: 100%;
+    background-color: white;
 }
 .youtube:hover {
     color: #ff0000;

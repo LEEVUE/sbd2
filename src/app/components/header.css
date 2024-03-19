@@ -6,11 +6,13 @@ header{
     height: var(--header-h);
 }
 .header-container {
+    max-width: 1440px;
+    margin: 0 auto;
     align-items: center;
     display: flex;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding-left: 50px;
+    padding-left: 0px;
 }
 .sbd-label {
     margin-left: 15px;
@@ -47,8 +49,7 @@ header{
 }
 
 @media screen and (max-width: 1440px) {
-    .header-container{
+    header{
         max-width: 1296px; /* 90% of 1440px */
-        margin: 0 auto;
     }
 }

@@ -7,6 +7,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --header-heigth: 100px;
+  --footer-height: 100px;
   
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -137,9 +139,14 @@
   }
 }
 
+.body-wrap {
+  min-height: calc(100vh - var(--header-heigth) - 41px - var(--footer-height));
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #cfcfcf;
+}
 @media screen and (max-width: 1440px) {
-  main{
+  .body-wrap{
       max-width: 1296px; /* 90% of 1440px */
-      margin: 0 auto;
   }
 }
