@@ -1,5 +1,5 @@
 footer {
-    background-color: navy;
+    background-color: #04203c;
     text-align: center;
     height: var(--footer-height);
 }
@@ -7,7 +7,7 @@ footer {
     padding: 10px 0;
     /* font-size: 14pt; */
     font-weight: bold;
-    color: white;
+    color: #ECEFF1;
 }
 .social-container {
     display: flex;
@@ -18,26 +18,34 @@ footer {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: whitesmoke;
+    color: #B0BEC5;
+    /* margin: 0 10px; */
+    outline-width: 1px;
+    /* border-width: 1px; */
+    padding: 2px;
+    margin: 4px;
+    /* margin-right: 5px; */
+    /* transition: 0.3s; */
 }
 .social-container span {
-    padding: 0 15px 0 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .social-outline {
     font-size: 30px;
 }
 .social-container a:hover {
-    border-style: dashed;
-    border-width: 1px;
+    /* border-style: dashed; */
+    outline-style: dashed;
     font-weight: bold;
-    margin: -1px;
+
 }
 .facebook:hover{
     color: #0866ff;
 }
 a:hover .fb {
     border-radius: 100%;
-    background-color: white;
+    background-color: #ECEFF1;
 }
 .youtube:hover {
     color: #ff0000;

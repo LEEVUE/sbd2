@@ -113,10 +113,11 @@
   font-family: var(--time-phet);
 }
 
-/* html, body {
+html, body {
   min-width: 100vw;
   overflow-x: hidden;
-} */
+  background-color: #f5f5f5;
+}
 
 /* body {
   color: rgb(var(--foreground-rgb));
@@ -143,7 +144,7 @@
   min-height: calc(100vh - var(--header-heigth) - 41px - var(--footer-height));
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #cfcfcf;
+  /* background-color: #f5f5f5; */
 }
 @media screen and (max-width: 1440px) {
   .body-wrap{

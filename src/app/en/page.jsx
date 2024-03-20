@@ -3,7 +3,7 @@ import React from 'react'
 export default function English() {
   return (
     <>
-      <div style={{padding: "30px", background: "#f0f0f0"}}>
+      <div style={{padding: "30px"}}>
         <h1>ກຳລັງພັດທະນາເວັບໄຊທ໌ <span style={{color: "#FF6D00"}}>ສະບັບພາສາອັງກິດ . . .</span></h1>
         <br />
         <br />
