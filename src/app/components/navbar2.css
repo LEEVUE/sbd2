@@ -26,7 +26,7 @@ menu a {
     font-weight: bold;
     font-size: 14pt;
     color: white;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     text-decoration: none;
     padding: 0 12px;
 }
@@ -38,12 +38,12 @@ menu a {
     width: 100%;
 }
 .menu-container a:hover {
-    /* background-color: navy; */
+    background-color: rgba(0, 0, 0, 0.1);
     /* color: black; */
     width: 100%;
 }
 /* ============= ກຳນົດເສັ້ນຊີດກ້ອງ ============= */
-menu a::after {
+menu li > a::after {
     content: "";
     position: absolute;
     background-color: #ffbb00;
@@ -55,9 +55,8 @@ menu a::after {
     opacity: 0;
     transform: scaleX(0);
     transition: all 0.4s ease;
-    transform-style:preserve-3d;
 }
-.menu-container > li > a:hover:after{
+.menu-container > li > a:hover:after {
     opacity: 1;
     transform: scaleX(1);
     height: 0.2rem;
@@ -77,16 +76,20 @@ menu a::after {
 }
 .sub-menu li a { /*ກຳນົດຂອບເຂດເພີ່ມເພື່ອໃຫ້ໄດ້ເນື້ອທີ່ສຳລັບລູກສອນ ArrowRigth*/
     display: inline-block;
-    background-color: #004963 !important;
-    padding-right: 20px;
+    background-color: #004963 ;
+    padding-right: 30px;
     width: 100%;
     font-size: 13pt;
-    font-weight: normal;
     letter-spacing: normal;
+    transition: all 0.3s ease;
 }
-.sub-menu a:hover { /*ກຳນົດສະໄຕລ໌ສະເພາະໃຫ້ກັບບັນດາ sub-menu ຍ່ອຍ*/
+.sub-menu li a:hover { /*ກຳນົດສະໄຕລ໌ສະເພາະໃຫ້ກັບບັນດາ sub-menu ຍ່ອຍ*/
     color: #38d6fe;
+    background-color: #003246 ;
+    /* padding-left: 20px; */
+    /* margin-right: 20px; */
 }
+
 li:hover > ul{
     top: 105%;
     opacity: 1;
@@ -108,7 +111,7 @@ li:hover > ul{
 
 /* ========== ກຳນົດໃຫ້ລູກສອນໝູນຕິດລົບ 180 ອົງສາ(ໝູນທວນເຂັມໂມງ) ==========*/
 .menu-container li .arrowDown {
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 menu li:hover .arrowDown {
     transform: rotate(-180deg);
@@ -127,7 +130,7 @@ menu li:hover .arrowDown {
 }
 .arrowRigth {
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 9px
 }
 

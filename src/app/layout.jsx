@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "./components/header";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import MarqueeTop from "./components/marqueeTop";
 
 // import { Inter } from "next/font/google";
 // ໃຊ້ Font ສຳລັບພາສາອັງກິດເທົ່ານັ້ນ
@@ -19,7 +20,11 @@ export default function RootLayout({ children }) {
         <body>
             <Header/>
             <Navbar/>
-            <main className="body-wrap">{children}</main>
+            
+            <main className="body-wrap">
+                <MarqueeTop/>
+                {children}
+            </main>
             <Footer/>
         </body>
     </html>

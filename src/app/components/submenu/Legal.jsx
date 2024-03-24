@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export default function LegalComponent() {
     return (
-        <div>
+        <>
             <li><Link href="#">ນິຕິກຳ<IoIosArrowDown className="arrowDown" /></Link>
                 <ul className="sub-menu">
                     <li><Link href="#">ກົດໝາຍ ແລະ ນິຕິກຳລຸ່ມກົດໝາຍ</Link></li>
@@ -25,6 +25,6 @@ export default function LegalComponent() {
             </li> */}
                 </ul>
             </li>
-        </div>
+        </>
     );
 }

@@ -1,0 +1,124 @@
+.news-container {
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 20px;
+    /* justify-content: space-between; */
+}
+.news-header-container {
+    display: flex;
+    margin-left: -20px;
+    transform: skew(-25deg);
+}
+.news-header-text {
+    /* height: 25px; */
+    display: block;
+    padding-left: 6.5px;
+    margin-right: 2px;
+}
+.khaosarn-container {
+    border-top-left-radius: 6px;
+    position: relative;
+    background-image: linear-gradient(#d1d1d1, #ffffff, #d1d1d1 );
+    border-bottom: 3px solid #df1e31;
+}
+.news-header-text p {
+    padding: 0 35px 0 15px;
+    height: 20px;
+    font-weight: bold;
+    /* height: 25px; */
+}
+.news-header-text p span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 12px;
+    padding: 0 8px;
+    color: #ffffff;
+    background-color: #df1e31;
+    border-radius: 5px 0 0 0;
+    font-size: 8pt;
+    font-weight: normal;
+}
+.khaosarn-streaming {
+    height: 8px;
+    color: #ffffff;
+    background-image: radial-gradient(ellipse, #1c74bc 10%, #2a3c93 80%);
+    text-align: center;
+    font-size: 5pt;
+}
+
+.khaosarn-header-effect {
+    width: 3px;
+    margin: 3px 2px;
+    background-color: #f9f9f9;
+}
+/* .news-header {
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    margin-left: 5px;
+    background-color: #efefef;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,209,67,1) 0%, rgba(255,144,83,1) 90%);
+    color: #f9f9f9;
+    text-align: center;
+    font-weight: bold;
+    transform: skew(-25deg);
+} */
+
+.news-content {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 2px;
+    transform: skewX(-25deg);
+}
+.news-content ul {
+    display: flex;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    /* line-height: 25px; */
+    animation: newstop 40s infinite linear ;
+    list-style: none;
+}
+@keyframes newstop {
+    from {transform: translateX(90%)}
+    to {transform: translateX(-100%)}
+}
+.news-content ul:hover {
+    animation-play-state: paused;
+}
+
+.news-content li {
+    transform: skewX(25deg);
+}
+
+.news-content a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.3s linear;
+}
+.news-content li:hover a {
+    /* color: darkorange; */
+    text-decoration: underline;
+}
+
+.react-icon {
+    vertical-align: text-bottom;
+    margin-right: 4px;
+}
+.bm-fill {
+    display: none;
+}
+.news-content a:hover .bm-fill {
+    display: inline;
+}
+.bm-nofill {
+    display: inline;
+}
+.news-content a:hover .bm-nofill {
+    display: none;
+}
