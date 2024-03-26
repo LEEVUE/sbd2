@@ -20,9 +20,7 @@ export default function RootLayout({ children }) {
         <body>
             <Header/>
             <Navbar/>
-            
             <main className="body-wrap">
-                <MarqueeTop/>
                 {children}
             </main>
             <Footer/>

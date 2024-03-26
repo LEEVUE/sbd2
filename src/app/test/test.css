@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, auto);
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: "lee lee";
+
+}
+.item {
+    background-color: lightseagreen;
+    border: 1px solid #000;
+    padding: 2px;
+    text-align: center;
+}
+
+.item:first-child {
+    /* grid-row: 1/span 2; */
+    position: absolute;
+    grid-area: lee;
+    margin-right: -200px;
+    background-color: red ;
+}

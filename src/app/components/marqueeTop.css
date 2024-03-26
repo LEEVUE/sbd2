@@ -1,5 +1,6 @@
 .news-container {
     background-color: brown;
+    background-image: ;
     display: flex;
     align-items: center;
     margin-top: 5px;
@@ -53,6 +54,7 @@
     width: 3px;
     margin: 3px 2px;
     background-color: #f9f9f9;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,209,67,1) 0%, rgba(255,144,83,1) 90%);
 }
 /* .news-header {
     height: 25px;
@@ -87,6 +89,7 @@
     from {transform: translateX(90%)}
     to {transform: translateX(-100%)}
 }
+
 .news-content ul:hover {
     animation-play-state: paused;
 }
@@ -96,7 +99,7 @@
 }
 
 .news-content a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     margin: 0 10px;
     transition: all 0.3s linear;
